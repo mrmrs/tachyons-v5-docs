@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+  <div class='p4'>
+    <h2>Vertical Align</h2>
+    <p>Use vertical align to set typography just right. Vertical align works on inline-level elements (display inline and inline-block) and on table cells.</p>
+    <p>This documents how vertical align affects text elements. If you’d like to see how to vertically align elements - checkout the layout documentation.</p>
+  </div>
+  <section class='p4'>
+    <h3>Values</h3>
+    
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+        <h4>Table Alignment</h4>
+        <p class="measure lh-body">You can use vertical alignment classes on either td elements or on elements with a class of <code>dtc</code> that are direct
+children of an element with a class of <code>dt</code>.
+        </p>
+        <table cellspacing="0" cellpadding="0" border="0" style='border-collapse: collapse;'>
+          <tbody><tr>
+            <td class="measure ba">
+              <img src="http://mrmrs.github.io/images/0001.jpg" width="128">
+            </td>
+            <td class="v-mid p2 ba">
+              <code class="db ">.v-mid</code>
+              Align text to the middle.
+            </td>
+          </tr>
+          <tr>
+            <td class='ba'>
+              <img src="http://mrmrs.github.io/images/0002.jpg" width="128">
+            </td>
+            <td class='v-top p2 ba'>
+              <code class="db ">.v-top</code>
+              Align text to the top.
+            </td>
+          </tr>
+          <tr>
+            <td class='ba'>
+              <img src="http://mrmrs.github.io/images/0005.jpg" width="128">
+            </td>
+            <td class="v-btm p2 ba">
+              <code class="db ">.v-btm</code>
+              Align text to the bottom.
+            </td>
+          </tr>
+        </tbody></table>
+        <h4>Inline-block Alignment</h4>
+        <h5>Align to the top</h5>
+<code class="pre db">
+&lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+</code>
+        <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+<p class="measure-narrow dib v-top mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light if you want to be really fancy. Or you can say it with the Extra
+  Bold if it’s really intensive and passionate, you know, and it might work.
+</p>
+<p class="measure-narrow dib v-top mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light…
+</p>
+<p class="measure-narrow dib v-top outline">
+  if you want to be really fancy. Or you can say it with the Extra
+  Bold if it’s really intensive and passionate, you know, and it might work.
+</p>
+</div>
+        <h4 class="mt5">Mix and match</h4>
+<code class="pre db">
+&lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-btm"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+</code>
+        <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+<p class="measure-narrow dib v-top mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light if you want to be really fancy. Or you can say it with the Extra
+  Bold if it’s really intensive and passionate, you know, and it might work.
+</p>
+<p class="measure-narrow dib v-btm mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light…
+</p>
+<p class="measure-narrow dib v-top outline">
+  if you want to be really fancy. Or you can say it with the Extra
+  Bold if it’s really intensive and passionate, you know, and it might work.
+</p>
+</div>
+        <h4 class="mt5">Align to the middle</h4>
+<code class="pre db">
+&lt;p class="dib v-mid"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-mid"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-mid"&gt;Content&lt;/p&gt;
+</code>
+        <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+<p class="measure-narrow dib v-mid mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light if you want to be really fancy. Or you can say it with the Extra
+  Bold if it’s really intensive and passionate, you know, and it might work.
+</p>
+<p class="measure-narrow dib v-mid mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light…
+</p>
+<p class="measure-narrow dib v-mid outline">
+  if you want to be really fancy.
+</p>
+        </div>
+        <h4 class="mt5">Align to the bottom</h4>
+<code class="pre db">
+&lt;p class="dib v-btm"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-btm"&gt;Content&lt;/p&gt;
+&lt;p class="dib v-btm"&gt;Content&lt;/p&gt;
+</code>
+        <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+<p class="measure-narrow dib v-btm mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light if you want to be really fancy. Or you can say it with the Extra
+  Bold if it’s really intensive and passionate, you know, and it might work.
+</p>
+<p class="measure-narrow dib v-btm mr4 outline">
+  You can say, “I love you,” in Helvetica. And you can say it with Helvetica
+  Extra Light…
+</p>
+<p class="measure-narrow dib v-btm outline">
+  if you want to be really fancy.
+</p>
+        </div>
+
+
+
+
+
+
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="fw6">Previous</h4>
+            <a href="/docs/typography/font-style/" class="link fw6 blue dim">Font Style</a>
+          </div>
+          <div class="dib">
+            <h4 class="fw6">Next</h4>
+            <a href="/docs/typography/text-align/" class="link fw6 blue dim">Text Align</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align" class="link fw6 blue dim">MDN - Vertical Align</a>
+        </div>
+  </section>
+  <Footer />
+</Layout>
+

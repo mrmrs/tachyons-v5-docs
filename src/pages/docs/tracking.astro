@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+      
+<div class='p4'>
+  <h2>Tracking</h2>
+<p class='measure lh-body'>
+  Letter-spacing is the consistent white-space between letters in a piece of text. In typography, letter-spacing is commonly known as tracking. Text that is set to uppercase should generally be tracked to improve readability. Small text and large titles will both benefit greatly.
+</p>
+
+<p class='measure lh-body'>
+  Lowercase text should never be tracked.
+</p>
+<p>
+  For some larger text, depending on the typeface, a negative tracking for short phrases might be desirable.
+</p>
+
+</div>
+  <section class='p4'>
+    <h3>Letter Spacings</h3>
+There are three possible values to choose from when tracking uppercased text:
+<pre>
+<code>
+.tracked       &#123; letter-spacing:  .1em;  &#125;
+.tracked-tight &#123; letter-spacing: -.05em; &#125;
+.tracked-mega  &#123; letter-spacing:  .25em; &#125;
+</code></pre>
+    
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+<h4 class="f8 ttu tracked-tight my0">Large Title Example</h4>
+<h5 class="f6 ttu tracked-tight mt0">Small Title Example</h5>
+<p>Default</p>
+<h4 class="f7 ttu my0">Large Title Example</h4>
+<h5 class="f3 ttu mt0">Small Title Example</h5>
+<p>Tracked</p>
+<h4 class="f7 ttu tracked my0">Large Title Example</h4>
+<h5 class="f3 ttu tracked mt0">Small Title Example</h5>
+<p>Tracked mega</p>
+<h4 class="f7 ttu tracked-mega my0">Large Title Example</h4>
+<h5 class="f3 ttu tracked-mega mt0">Small Title Example</h5>
+  </section>
+  <Footer />
+</Layout>
+

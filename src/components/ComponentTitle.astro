@@ -1,0 +1,7 @@
+---
+const { variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <h4><slot/></h4>
+}

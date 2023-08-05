@@ -1,0 +1,62 @@
+/*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -s  = small
+     -m  = medium
+     -l  = large
+
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+  .cover   { background-size: cover!important; }
+  .contain { background-size: contain!important; }
+  .bg1     { background-size: 16px; }
+  .bg2     { background-size: 32px; }
+  .bg3     { background-size: 64px; }
+  .bg4     { background-size: 128px; }
+  .bg-100  { background-size: 100%; }
+  .bg-150  { background-size: 150%; }
+  .bg-200  { background-size: 200%; }
+
+@media (--breakpoint-small) {
+  .cover-s { background-size: cover!important; }
+  .contain-s { background-size: contain!important; }
+  .bg1-s    { background-size: 16px; }
+  .bg2-s    { background-size: 32px; }
+  .bg3-s    { background-size: 64px; }
+  .bg4-s    { background-size: 128px; }
+  .bg-100-s { background-size: 100%; }
+  .bg-150-s { background-size: 150%; }
+  .bg-200-s { background-size: 200%; }
+}
+
+@media (--breakpoint-medium) {
+  .cover-m { background-size: cover!important; }
+  .contain-m { background-size: contain!important; }
+  .bg1-m    { background-size: 16px; }
+  .bg2-m    { background-size: 32px; }
+  .bg3-m    { background-size: 64px; }
+  .bg4-m    { background-size: 128px; }
+  .bg-100-m { background-size: 100%; }
+  .bg-150-m { background-size: 150%; }
+  .bg-200-m { background-size: 200%; }
+}
+
+@media (--breakpoint-large) {
+  .cover-l { background-size: cover!important; }
+  .contain-l { background-size: contain!important; }
+  .bg1-l    { background-size: 16px; }
+  .bg2-l    { background-size: 32px; }
+  .bg3-l    { background-size: 64px; }
+  .bg4-l    { background-size: 128px; }
+  .bg-100-l { background-size: 100%; }
+  .bg-150-l { background-size: 150%; }
+  .bg-200-l { background-size: 200%; }
+}

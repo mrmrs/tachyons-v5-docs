@@ -1,0 +1,94 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+      
+<div class='p4'>
+<h2>Opacity</h2>
+<p class='lh-body measure'>
+  This module is a sequence of opacity values that you can apply to any element to adjust the opacity of text, backgrounds, and images. 
+</p>
+</div>
+  <section class='p4'>
+    <h3>Variables</h3>
+<code class='pre db mb5'>--opacity-0: 0;
+--opacity-1: .025;
+--opacity-2: .05;
+--opacity-3: .1;
+--opacity-4: .2;
+--opacity-5: .3;
+--opacity-6: .4;
+--opacity-7: .5;
+--opacity-8: .6;
+--opacity-9: .7;
+--opacity-10: .8;
+--opacity-11: .9;
+--opacity-12: 1;
+    </code>
+
+    <table style='border-collapse:collapse;'>
+      <tbody>
+        <tr>
+          <td style='line-height: .85;' class="bg-gray-0 o0 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o1 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o2 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o3 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o4 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o5 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o6 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o7 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o8 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o9 br fw9 p3 tc  v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o10 br fw9 p3 tc v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o11 br fw9 p3 tc v-base">A</td>
+          <td style='line-height: .85;' class="bg-gray-0 o12 fw9 p3 tc v-base">A</td>
+        </tr>
+        <tr>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">0</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">0.025</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">0.05</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">0.1</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.2</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.3</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.4</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.5</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.6</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.7</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.8</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">0.9</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt pt1">1</td>
+        </tr>
+      </tbody>
+    </table> </section> <section class='p4'>
+    <h3>Examples</h3>
+    <div class='grid cols-4 g3'>
+      <img class='br2 shadow-6 o12 col-full' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o11' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o10' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o9' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o8' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o7' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o6' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o5' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o4' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o3' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o2' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o1' src='https://source.unsplash.com/random/1200x630' />
+      <img class='br2 shadow-6 o0' src='https://source.unsplash.com/random/1200x630' />
+    </div>
+  </section>
+  <section class='p4'>
+    <h3>Reference</h3>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">MDN - font-size</a>
+  </section> 
+  <Footer />
+</Layout>
+

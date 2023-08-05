@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+      
+<div class='p4'>
+<h2>Text Decoration</h2>
+<p>
+  Utilities for decorating text with underlines, or removing the default underlines browsers put on links. 
+</p>
+</div>
+  <section class='p4'>
+    <h3>Values</h3>
+    
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+
+        <h4 class=" fw6 pt4">Text Decoration None</h4>
+        <code class="db">
+          &lt;a class="no-underline"&gt;no-underline&lt;/a&gt;
+        </code>
+        <a class="db no-underline mt2">no-underline</a>
+        <h4 class=" fw6 mt5">Text Decoration Underline</h4>
+        <code >
+          &lt;p class="underline"&gt;underline.&lt;/p&gt;
+        </code>
+        <p class="underline">
+          underline.
+        </p>
+        <h4 class=" fw6 mt4">Text Decoration Strikethrough</h4>
+        <code >
+          &lt;p class="strike"&gt;strike.&lt;/p&gt;
+        </code>
+        <p class="strike">strike</p>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="fw6">Previous</h4>
+            <a href="/docs/typography/text-transform/" class="link fw6 blue dim">Text Transform</a>
+          </div>
+          <div class="dib">
+            <h4 class="fw6">Next</h4>
+            <a href="/docs/typography/white-space/" class="link fw6 blue dim">White Space</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" class="link fw6 blue dim">MDN - Text Decoration</a>
+        </div>
+      
+  </section>
+  <Footer />
+</Layout>
+

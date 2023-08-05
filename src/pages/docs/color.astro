@@ -1,0 +1,230 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+      
+<div class='p4'>
+<h2>Color</h2>
+<p class='lh-body measure'>
+  Tachyons comes with a collection of classes for setting the color of text and the color of the background. Listed below are the a11y friendly combinations that are available.
+</p>
+<p class='lh-body measure'>
+  12 step scales across major hues.
+</p>
+</div>
+  <section class='p4'>
+    <h3>Variables</h3>
+    <code class='pre db mb5'>
+
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-1'></b>  --blue-1: #071e3f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-2'></b>  --blue-2: #0c3166;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-3'></b>  --blue-3: #10448d;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-4'></b>  --blue-4: #1556b4;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-5'></b>  --blue-5: #1969db;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-6'></b>  --blue-6: #317fed;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-7'></b>  --blue-7: #5797f0;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-8'></b>  --blue-8: #7daef4;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-9'></b>  --blue-9: #a3c6f7;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-10'></b>  --blue-10: #c9ddfa;
+<b class='dib w1 h1 shadow-border-1 br11 bg-blue-11'></b>  --blue-11: #eff5fe;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-0'></b>  --indigo-0: #080614;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-1'></b>  --indigo-1: #19143f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-2'></b>  --indigo-2: #2a216a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-3'></b>  --indigo-3: #3a2e95;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-4'></b>  --indigo-4: #4b3bc0;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-5'></b>  --indigo-5: #5c49eb;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-6'></b>  --indigo-6: #725fff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-7'></b>  --indigo-7: #8c7cff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-8'></b>  --indigo-8: #a69aff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-9'></b>  --indigo-9: #c0b7ff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-10'></b>  --indigo-10: #dad5ff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-indigo-11'></b>  --indigo-11: #f4f3ff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-0'></b>  --violet-0: #110517;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-1'></b>  --violet-1: #2e0d3e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-2'></b>  --violet-2: #4b1465;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-3'></b>  --violet-3: #681c8c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-4'></b>  --violet-4: #8424b3;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-5'></b>  --violet-5: #a12cda;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-6'></b>  --violet-6: #b543ec;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-7'></b>  --violet-7: #c366f0;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-8'></b>  --violet-8: #d089f3;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-9'></b>  --violet-9: #deabf7;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-10'></b>  --violet-10: #eccefa;
+<b class='dib w1 h1 shadow-border-1 br11 bg-violet-11'></b>  --violet-11: #f9f0fe;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-0'></b>  --magenta-0: #13040f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-1'></b>  --magenta-1: #350a2c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-2'></b>  --magenta-2: #581148;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-3'></b>  --magenta-3: #7b1765;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-4'></b>  --magenta-4: #9e1e82;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-5'></b>  --magenta-5: #c1249e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-6'></b>  --magenta-6: #d43cb2;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-7'></b>  --magenta-7: #dc61c1;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-8'></b>  --magenta-8: #e485cf;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-9'></b>  --magenta-9: #eca9dd;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-10'></b>  --magenta-10: #f4ceec;
+<b class='dib w1 h1 shadow-border-1 br11 bg-magenta-11'></b>  --magenta-11: #fcf2fa;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-0'></b>  --red-0: #120205;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-1'></b>  --red-1: #39050f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-2'></b>  --red-2: #5f0819;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-3'></b>  --red-3: #860b24;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-4'></b>  --red-4: #ac0e2e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-5'></b>  --red-5: #d31138;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-6'></b>  --red-6: #e7284e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-7'></b>  --red-7: #ec506f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-8'></b>  --red-8: #f07790;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-9'></b>  --red-9: #f49fb0;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-10'></b>  --red-10: #f9c7d1;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-11'></b>  --red-11: #fdeef1;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-0'></b>  --red-orange-0: #190b05;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-1'></b>  --red-orange-1: #3d1307;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-2'></b>  --red-orange-2: #601b0a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-3'></b>  --red-orange-3: #84240c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-4'></b>  --red-orange-4: #a72c0e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-5'></b>  --red-orange-5: #cb3411;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-6'></b>  --red-orange-6: #ee3c13;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-7'></b>  --red-orange-7: #fe562f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-8'></b>  --red-orange-8: #fe7d5e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-9'></b>  --red-orange-9: #ffa48e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-10'></b>  --red-orange-10: #ffccbe;
+<b class='dib w1 h1 shadow-border-1 br11 bg-red-orange-11'></b>  --red-orange-11: #fff3ee;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-0'></b>  --orange-0: #150d04;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-1'></b>  --orange-1: #2e1c08;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-2'></b>  --orange-2: #472a0c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-3'></b>  --orange-3: #603910;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-4'></b>  --orange-4: #794714;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-5'></b>  --orange-5: #a65d13;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-6'></b>  --orange-6: #d37413;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-7'></b>  --orange-7: #ff8a14;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-8'></b>  --orange-8: #ffa54a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-9'></b>  --orange-9: #ffc081;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-10'></b>  --orange-10: #ffdab7;
+<b class='dib w1 h1 shadow-border-1 br11 bg-orange-11'></b>  --orange-11: #fff5ed;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-0'></b>  --gold-0: #140e05;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-1'></b>  --gold-1: #2c1f0a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-2'></b>  --gold-2: #432f0e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-3'></b>  --gold-3: #5b4013;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-4'></b>  --gold-4: #725118;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-5'></b>  --gold-5: #946818;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-6'></b>  --gold-6: #d4950d;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-7'></b>  --gold-7: #eeb028;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-8'></b>  --gold-8: #f2c259;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-9'></b>  --gold-9: #f7d38a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-10'></b>  --gold-10: #fbe5bc;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gold-11'></b>  --gold-11: #fff5e9;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-0'></b>  --yellow-0: #111006;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-1'></b>  --yellow-1: #252405;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-2'></b>  --yellow-2: #3a3804;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-3'></b>  --yellow-3: #4e4d03;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-4'></b>  --yellow-4: #636101;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-5'></b>  --yellow-5: #777500;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-6'></b>  --yellow-6: #ccc500;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-7'></b>  --yellow-7: #fcf433;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-8'></b>  --yellow-8: #fdf67a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-9'></b>  --yellow-9: #fdf89b;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-10'></b>  --yellow-10: #fef9bb;
+<b class='dib w1 h1 shadow-border-1 br11 bg-yellow-11'></b>  --yellow-11: #fefadb;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-0'></b>  --green-0: #091108;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-1'></b>  --green-1: #0f2611;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-2'></b>  --green-2: #153c1a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-3'></b>  --green-3: #1b5122;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-4'></b>  --green-4: #21662b;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-5'></b>  --green-5: #25833a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-6'></b>  --green-6: #26b056;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-7'></b>  --green-7: #35d272;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-8'></b>  --green-8: #63dd90;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-9'></b>  --green-9: #90e8ae;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-10'></b>  --green-10: #bdf3cc;
+<b class='dib w1 h1 shadow-border-1 br11 bg-green-11'></b>  --green-11: #eafeea;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-0'></b>  --teal-0: #07100c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-1'></b>  --teal-1: #0c231a;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-2'></b>  --teal-2: #113628;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-3'></b>  --teal-3: #164936;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-4'></b>  --teal-4: #1b5b45;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-5'></b>  --teal-5: #177f63;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-6'></b>  --teal-6: #12a282;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-7'></b>  --teal-7: #2abb9b;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-8'></b>  --teal-8: #5acab1;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-9'></b>  --teal-9: #8bdac7;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-10'></b>  --teal-10: #bbe9dc;
+<b class='dib w1 h1 shadow-border-1 br11 bg-teal-11'></b>  --teal-11: #ecf8f2;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-0'></b>  --cyan-0: #0a1211;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-1'></b>  --cyan-1: #102425;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-2'></b>  --cyan-2: #153639;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-3'></b>  --cyan-3: #1b484c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-4'></b>  --cyan-4: #215a60;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-5'></b>  --cyan-5: #247981;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-6'></b>  --cyan-6: #24a9b6;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-7'></b>  --cyan-7: #28d6e6;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-8'></b>  --cyan-8: #57e0ec;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-9'></b>  --cyan-9: #85eaf2;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-10'></b>  --cyan-10: #b4f5f9;
+<b class='dib w1 h1 shadow-border-1 br11 bg-cyan-11'></b>  --cyan-11: #e2ffff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-0'></b>  --gray-0: #000000;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-1'></b>  --gray-1: #171717;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-2'></b>  --gray-2: #2f2f2f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-3'></b>  --gray-3: #464646;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-4'></b>  --gray-4: #5e5e5e;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-5'></b>  --gray-5: #757575;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-6'></b>  --gray-6: #8c8c8c;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-7'></b>  --gray-7: #a3a3a3;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-8'></b>  --gray-8: #bababa;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-9'></b>  --gray-9: #d1d1d1;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-10'></b>  --gray-10: #e8e8e8;
+<b class='dib w1 h1 shadow-border-1 br11 bg-gray-11'></b>  --gray-11: #ffffff;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-0'></b>  --slate-gray-0: #09090b;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-1'></b>  --slate-gray-1: #1d1d22;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-2'></b>  --slate-gray-2: #313138;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-3'></b>  --slate-gray-3: #45444f;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-4'></b>  --slate-gray-4: #595866;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-5'></b>  --slate-gray-5: #6d6c7d;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-6'></b>  --slate-gray-6: #838292;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-7'></b>  --slate-gray-7: #9a9aa7;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-8'></b>  --slate-gray-8: #b2b1bb;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-9'></b>  --slate-gray-9: #c9c9d0;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-10'></b>  --slate-gray-10: #e1e0e4;
+<b class='dib w1 h1 shadow-border-1 br11 bg-slate-gray-11'></b>  --slate-gray-11: #f8f8f9;
+<b class='dib w1 h1 shadow-border-1 br11 bg-transparent'></b>  --transparent: hsla(0,0,0,0);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-0'></b>  --tint-0: hsla(0, 0%, 100%, 0.035);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-1'></b>  --tint-1: hsla(0, 0%, 100%, 0.1);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-2'></b>  --tint-2: hsla(0, 0%, 100%, 0.19);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-3'></b>  --tint-3: hsla(0, 0%, 100%, 0.28);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-4'></b>  --tint-4: hsla(0, 0%, 100%, 0.36);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-5'></b>  --tint-5: hsla(0, 0%, 100%, 0.45);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-6'></b>  --tint-6: hsla(0, 0%, 100%, 0.55);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-7'></b>  --tint-7: hsla(0, 0%, 100%, 0.64);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-8'></b>  --tint-8: hsla(0, 0%, 100%, 0.73);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-9'></b>  --tint-9: hsla(0, 0%, 100%, 0.815);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-10'></b>  --tint-10: hsla(0, 0%, 100%, 0.895);
+<b class='dib w1 h1 shadow-border-1 br11 bg-tint-11'></b>  --tint-11: hsla(0, 0%, 100%, 0.94);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-0'></b>  --shadow-0: hsla(0, 0%, 0%, 0.94);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-1'></b>  --shadow-1: hsla(0, 0%, 0%, 0.895);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-2'></b>  --shadow-2: hsla(0, 0%, 0%, 0.815);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-3'></b>  --shadow-3: hsla(0, 0%, 0%, 0.73);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-4'></b>  --shadow-4: hsla(0, 0%, 0%, 0.64);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-5'></b>  --shadow-5: hsla(0, 0%, 0%, 0.55);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-6'></b>  --shadow-6: hsla(0, 0%, 0%, 0.45);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-7'></b>  --shadow-7: hsla(0, 0%, 0%, 0.36);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-8'></b>  --shadow-8: hsla(0, 0%, 0%, 0.28);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-9'></b>  --shadow-9: hsla(0, 0%, 0%, 0.19);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-10'></b>  --shadow-10: hsla(0, 0%, 0%, 0.1);
+<b class='dib w1 h1 shadow-border-1 br11 bg-shadow-11'></b>  --shadow-11: hsla(0, 0%, 0%, 0.035);
+    </code>
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+  </section>
+  <section class='p4'>
+    <h3>Reference</h3>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">MDN - font-size</a>
+  </section> 
+  <Footer />
+</Layout>
+

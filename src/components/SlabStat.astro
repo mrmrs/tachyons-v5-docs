@@ -1,0 +1,10 @@
+---
+const { title = 'Sample stat count', text = '1,024', variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <dl>
+    <dt class='f3 fw9'>{title}</dt>
+    <dd class='m0 lh-copy f7 fw9'>{text}</dd>
+  </dl>
+}

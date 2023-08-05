@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Card from '../components/Card.astro';
+import Avatar from '../components/Avatar.astro';
+import SlabStat from '../components/SlabStat.astro';
+import Footer from '../components/Footer.astro';
+import ComponentTitle from '../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Design at the speed of light">
+  <Header />
+  <section class='gray-0 p4 p5-m p6-l'>
+    <h1 class='m0'>Tachyons v5</h1>
+    <p class='f5 f7-m f9-l fw9 m0'>
+      Modular scales and curated values for building everything from art portfolios to enterprise software. <br /><br />Coming soon.
+    </p>
+  </section>
+  <div>
+  <section class='p4'>
+    <ComponentTitle>Avatar</ComponentTitle> 
+    <Avatar /> 
+  </section>
+  <section class='p4'>
+    <ComponentTitle>SlabStat</ComponentTitle> 
+    <SlabStat /> 
+  </section>
+  </div>
+  <Footer />
+</Layout>
+

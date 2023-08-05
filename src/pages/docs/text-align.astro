@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+      
+<div class='p4'>
+<h2>Text Align</h2>
+
+
+<p>
+Designing for readability across infinite screen-sizes often times requires setting elements to have different text-alignments across breakpoints.
+</p>
+
+<p>These are simple utilities for setting text-alignment to the left, right, or center of an element.</p>
+</div>
+  <section class='p4'>
+    <h3>Text align</h3>
+<pre><code>
+.tc &#123; text-align: center;  &#125;
+.tr &#123; text-align: right;   &#125;
+.tl &#123; text-align: left;    &#125;
+.tj &#123; text-align: justify; &#125;
+</code> </pre> 
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+<p class="tl">Aligned Left</p>
+
+Aligned Left
+<p class="tr">Aligned Right</p>
+
+Aligned Right
+<p class="tc">Aligned Center</p>
+
+Aligned to the center
+<p class="tj">Justified Alignment</p>
+
+justified—text is aligned along the left margin, and letter- and word-spacing is adjusted so that the text falls flush with both margins, also known as fully justified or full justification; 
+  </section>
+  <Footer />
+</Layout>
+

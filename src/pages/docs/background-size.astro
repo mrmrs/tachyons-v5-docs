@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+  <div class='p4'>
+    <h2>Background Size</h2>
+    <p class='lh-body measure'>
+      Background-size affects how background images fill their containing elements. While measurements can be declared explicitly to size an image, the values that seem most reusable are contain and cover. 
+    </p>
+  </div>
+  <section class='p4'>
+    <h3>Values</h3>
+<code class='pre db mb5'>.cover   &#123; background-size: cover!important; &#125;
+.contain &#123; background-size: contain!important; &#125;
+.bg1     &#123; background-size: 16px; &#125;
+.bg2     &#123; background-size: 32px; &#125;
+.bg3     &#123; background-size: 64px; &#125;
+.bg4     &#123; background-size: 128px; &#125;
+.bg-100  &#123; background-size: 100%; &#125;
+.bg-150  &#123; background-size: 150%; &#125;
+.bg-200  &#123; background-size: 200%; &#125;
+</code>
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+        <div>
+          <code class="fw4 dib">.contain &#123; background-size: contain &#125;</code>
+          <p class="measure lh-copy mt3"><code>contain</code> will make sure that the entire image is displayed within the element, regardless of the elements dimensions.</p>
+          <div style="background-image: url(http://placekitten.com/g/500/500);background-repeat: no-repeat;outline: 1px solid black;" class="contain h4 w-100">
+          </div>
+        </div>
+        <div>
+          <code class="fw4 dib">.cover &#123; background-size: cover &#125;</code>
+          <p class="measure lh-copy mt3"><code>cover</code> will make sure the entire element is covered - but won’t guarantee that the entire image will be shown.</p>
+          <div style="background-image: url(http://placekitten.com/g/500/500); outline: 1px solid black;" class="cover h4 w-100">
+          </div>
+        </div>
+  </section>
+  <section class='p4'>
+    <h3>Reference</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">MDN - font-size</a>
+  </section> 
+  <Footer />
+</Layout>
+

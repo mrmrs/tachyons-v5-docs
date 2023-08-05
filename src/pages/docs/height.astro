@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+      
+<div class='p4'>
+<h2>Type Scale</h2>
+<p class='lh-body measure'>
+  Often times, websites devote a non-trivial amount of CSS to setting font-size. CSS files can contain unnecessary amounts of varying font-sizes that upon inspection, don’t come close to resembling a cohesive scale.
+</p>
+<p class='lh-body measure'>
+  To create and design an easily readable interface, you don’t need dozens or hundreds of font-sizes. A simple ratio-based scale with 12 options should provide a wide array of visual options so you can build everything from markting pages to enterprise dashboards. 
+</p>
+<p class='lh-body measure'>
+  Don’t spend time constantly overriding font-sizes in your CSS. Use font-size classes to quickly make the text larger or smaller until it looks just right.
+</p>
+<blockquote class='ml0 pl4 bw3 bl'>
+<p class='lh-body measure'>
+    “The simplest scale is a single note, and sticking with a single note draws more attention to other parameters, such as rhythm and inflection… In the sixteenth century, a series of common sizes developed among European typographers, and the series survived with little change and few additions for 400 years… This is the typographic equivalent of the diatonic scale.”
+</p>
+<p class='fw9'>—Robert Bringhurst, The Elements of Typographic Style</p>
+</blockquote>
+</div>
+  <section class='p4'>
+    <h3>Variables</h3>
+    <code class='pre db mb5'>
+
+--font-size-1: 12px;
+--font-size-2: 14px;
+--font-size-3: 16px;
+--font-size-4: 20px;
+--font-size-5: 24px;
+--font-size-6: 32px;
+--font-size-7: 48px;
+--font-size-8: 64px;
+--font-size-9: 96px;
+--font-size-10: 128px;
+--font-size-11: 192px;
+--font-size-12: 256px;
+    </code>
+
+    <table style='border-collapse:collapse;'>
+      <tbody>
+        <tr>
+          <td style='line-height: .85;' class="br fw9 px3 tc f1 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f2 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f3 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f4 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f5 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f6 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f7 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f8 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f9 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f10 v-base">A</td>
+          <td style='line-height: .85;' class="br fw9 px3 tc f11 v-base">A</td>
+          <td style='line-height: .85;' class="fw9 px3 tc f12 v-base">A</td>
+        </tr>
+        <tr>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">12px</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">14px</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">16px</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">20px</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">24px</td>
+          <td class="p2 tc gray f2 fw4 ph2 bt br pt1">32px</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">48px</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">64px</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">96px</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">128px</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt br pt1">192px</td>
+          <td class="p2 tc gray f2 fw4 pl2 bt pt1">256px</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class='p4'>
+    <h3>Examples</h3>
+    <article class='bb py2'>
+      <code>f1 - 12px</code> 
+      <p class='f1  lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    </article>
+    <article class='bb py2'>
+      <code>f2 - 14px</code> 
+    <p class='f2  lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    </article>
+    <article class='bb py2'>
+      <code>f3 - 16px</code> 
+    <p class='f3  lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f4 - 20px</code> 
+    <p class='f4  lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f5 - 24px</code> 
+    <p class='f5  lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f6 - 32px</code> 
+    <p class='f6  lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f7 - 48px</code> 
+    <p class='f7  fw9 lh-title m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f8 - 64px</code> 
+    <p class='f8  fw9 lh-solid m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f9 - 96px</code> 
+    <p class='f9  fw9 lh-solid m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f10 - 128px</code> 
+    <p class='f10 fw9 lh-solid m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f11 - 192px</code> 
+    <p class='f11 fw9 lh-solid m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+    <article class='bb py2'>
+      <code>f12 - 256px</code> 
+    <p class='f12 fw9 lh-solid m0 nowrap overflow-hidden'>Lorem the quick brown fox jumped over the lazy red dog.</p>
+    </article>
+  </section>
+  <section class='p4'>
+    <h3>Reference</h3>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">MDN - font-size</a>
+  </section> 
+  <Footer />
+</Layout>
+

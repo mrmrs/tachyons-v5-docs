@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Card from '../../components/Card.astro';
+import Avatar from '../../components/Avatar.astro';
+import SlabStat from '../../components/SlabStat.astro';
+import Footer from '../../components/Footer.astro';
+import ComponentTitle from '../../components/ComponentTitle.astro';
+---
+
+<Layout title="Tachyons - Docs">
+  <Header />
+  <div class='p4'>
+    <h2>Line Height</h2>
+
+    <p>line-height is a css property</p>
+    <p class='measure lh-body'>
+      lead [rhyming with red]:
+      Originally a strip of soft metal used for vertical spacing between lines of type. Now meaning the vertical distance from the baseline of one line to the baseline of the next. Also called leading.
+    </p>
+    <blockquote class='measure lh-body'>
+      <p>
+        “Many people with cognitive disabilities have trouble tracking lines of text when a block of text is single spaced. Providing spacing between 1.5 to 2 allows them to start a new line more easily once they have finished the previous one.”
+      </p>
+      <p>
+      —WCAG 2.0 Compliance Techniques 
+      </p>
+    </blockquote>
+    <p class='lh-body measure'>
+      Line-height affects how easy it is to read a piece of text, so having a well constructed set of values can help make your text easier to read, increasing the chances that people will read it. Tachyons provides classes to set text at three common line-height values. 1.5 for body copy, 1.25 for titles, and 1 for text that doesn’t wrap. 
+    </p>
+  </div>
+  <section class='p4'>
+    <h3>Line Heights</h3>
+<pre>
+<code>
+.lh-solid &#123; line-height: 1; &#125;
+.lh-title &#123; line-height: 1.25; &#125;
+.lh-body  &#123; line-height: 1.5; &#125;
+</code></pre></section>
+<section class='p4'>
+    <h3>Examples</h3>
+
+<h4>No applied line-height (default)</h4>
+
+<p class='measure'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h4>Body Leading (1.5)</h4>
+<p class='lh-body measure-wide'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h4 class='mt5'>No Applied Title Leading (Default)</h4>
+<h4 class='f7 fw9 measure-narrow m0'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h4>
+<h4>Title Leading (1.25)</h4>
+<h4 class='f7 fw9 measure-narrow m0 lh-title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h4>
+<h4>Solid Leading (1)</h4>
+<h4 class='f9 fw9 measure-narrow m0 lh-solid'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h4>
+  </section>
+  <Footer />
+</Layout>
+

@@ -1,0 +1,20 @@
+/*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+
+.o12  { opacity: var(--opacity-12, 1); }
+.o11  { opacity: var(--opacity-11,.9); }
+.o10  { opacity: var(--opacity-10,.8); }
+.o9   { opacity: var(--opacity-9,.7);  }
+.o8   { opacity: var(--opacity-8,.6);  }
+.o7   { opacity: var(--opacity-7,.5);  }
+.o6   { opacity: var(--opacity-6,.4);  }
+.o5   { opacity: var(--opacity-5,.3);  }
+.o4   { opacity: var(--opacity-4,.2);  }
+.o3   { opacity: var(--opacity-3,.1);  }
+.o2   { opacity: var(--opacity-2,.05); }
+.o1   { opacity: var(--opacity-1,.025);}
+.o0   { opacity: var(--opacity-0,0);   }

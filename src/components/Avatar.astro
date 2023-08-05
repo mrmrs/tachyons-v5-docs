@@ -1,0 +1,9 @@
+---
+const { image = 'https://source.unsplash.com/random/256x256', variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <div class='w3 h3 p1'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}

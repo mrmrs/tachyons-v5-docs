@@ -1,0 +1,9 @@
+---
+const { variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <p class='lh-body measure'>
+    <slot /> 
+  </p>
+}

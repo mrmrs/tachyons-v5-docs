@@ -1,0 +1,42 @@
+{
+  "name": "tachyons-v5-docs",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.10.0"
+  },
+  "devDependencies": {
+    "authors-to-markdown": "^0.1.0",
+    "autoprefixer": "^10.4.14",
+    "chalk": "^5.3.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^6.0.1",
+    "cssstats": "^4.0.5",
+    "dedent": "^1.0.1",
+    "file-exists": "^5.0.1",
+    "is-blank": "^2.1.0",
+    "is-present": "^1.0.0",
+    "lodash": "^4.17.21",
+    "meow": "^12.0.1",
+    "mkdirp": "^3.0.1",
+    "perfectionist": "^2.4.0",
+    "postcss": "^8.4.27",
+    "postcss-calc": "^9.0.1",
+    "postcss-class-repeat": "^0.1.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-css-variables": "^0.19.0",
+    "postcss-custom-media": "^10.0.0",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-extend-rule": "^4.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-rtl": "^2.0.0",
+    "single-trailing-newline": "^1.0.0"
+  }
+}

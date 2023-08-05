@@ -1,0 +1,17 @@
+---
+const { variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <header class='bb flex items-center'>
+    <a href='/' class='link flex items-center py3 px4 fw9 f5 gray-0' title='Tachyons Documentation'>
+      Tachyons 
+    </a>  
+    <nav class='flex ml-auto mr3'>
+      <a href='/docs' class='link db py2 px3 fw7 f3 gray-0' title='Components'>Docs</a>  
+      <a href='/theme' class='link db py2 px3 fw7 f3 gray-0' title='Components'>Theme</a>  
+      <a href='/components' class='link db py2 px3 fw7 f3 gray-0' title='Components'>Components</a>  
+      <a href='/pages' class='link db py2 px3 fw7 f3 gray-0' title='Pages'>Pages</a>  
+    </nav>
+  </header>
+}
