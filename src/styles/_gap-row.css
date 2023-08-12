@@ -23,7 +23,7 @@
 .gr6 { gap-row: var(--spacing-6, 128px); }
 .gr7 { gap-row: var(--spacing-7, 256px); }
 
-@media (--breakpoint-small) {
+@container (min-width:30em) {
   .gr0-s { gap-row: var(--spacing-0, 0); }
   .gr1-s { gap-row: var(--spacing-1, 4px); }
   .gr2-s { gap-row: var(--spacing-2, 8px); }
@@ -34,7 +34,7 @@
   .gr7-s { gap-row: var(--spacing-7, 256px); }
 }
 
-@media (--breakpoint-medium) {
+@container (min-width:48em) {
   .gr0-m { gap-row: var(--spacing-0, 0); }
   .gr1-m { gap-row: var(--spacing-1, 4px); }
   .gr2-m { gap-row: var(--spacing-2, 8px); }
@@ -46,7 +46,7 @@
 }
 
 
-@media (--breakpoint-large) {
+@container (min-width:64em) {
   .gr0-l { gap-row: var(--spacing-0); }
   .gr1-l { gap-row: var(--spacing-1); }
   .gr2-l { gap-row: var(--spacing-2); }

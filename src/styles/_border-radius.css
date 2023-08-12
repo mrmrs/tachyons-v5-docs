@@ -61,7 +61,7 @@
   .br-initial { border-radius: initial; }
   .br-unset { border-radius: unset; }
 
-@media (--breakpoint-small) {
+@container (min-width:30em) {
   .br-primary-s  {          border-radius: var(--border-radius, 6px); }
   .br0-s {        border-radius: var(--border-radius-0, 0); }
   .br1-s {        border-radius: var(--border-radius-1, 4px); }
@@ -96,7 +96,7 @@
   .br-unset-s { border-radius: unset; }
 }
 
-@media (--breakpoint-medium) {
+@container (min-width:48em) {
   .br-primary-m  {        border-radius: var(--border-radius, 6px); }
   .br0-m {        border-radius: var(--border-radius-0, 0); }
   .br1-m {        border-radius: var(--border-radius-1, 4px); }
@@ -131,7 +131,7 @@
   .br-unset-m { border-radius: unset; }
 }
 
-@media (--breakpoint-large) {
+@container (min-width:64em) {
   .br-primary-l { border-radius: var(--border-radius, 6px); }
   .br0-l {        border-radius: var(--border-radius-0, 0); }
   .br1-l {        border-radius: var(--border-radius-1, 4px); }

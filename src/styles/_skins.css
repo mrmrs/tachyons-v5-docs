@@ -34,7 +34,7 @@
 .shadow-9 { color: var(--shadow-9); }
 .shadow-10 { color: var(--shadow-10); }
 .shadow-11 { color: var(--shadow-11); }
-.gray-0 { color: var(--gray-0); }
+.black, .gray-0 { color: var(--gray-0); }
 .gray-1 { color: var(--gray-1); }
 .gray-2 { color: var(--gray-2); }
 .gray-3 { color: var(--gray-3); }
@@ -45,7 +45,7 @@
 .gray-8 { color: var(--gray-8); }
 .gray-9 { color: var(--gray-9); }
 .gray-10 { color: var(--gray-10); }
-.gray-11 { color: var(--gray-11); }
+.white, .gray-11 { color: var(--gray-11); }
 .slate-gray-0 { color: var(--slate-gray-0); }
 .slate-gray-1 { color: var(--slate-gray-1); }
 .slate-gray-2 { color: var(--slate-gray-2); }

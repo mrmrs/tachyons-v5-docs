@@ -3,7 +3,52 @@ const { image = 'https://source.unsplash.com/random/256x256', variant = 1 } = As
 ---
 
 {variant === 1 && 
+  <div class='w3 h3'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}
+
+{variant === 2 && 
+  <div class='w3 h3 p1 bg shadow-border-1 br11'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}
+
+{variant === 3 && 
+  <div class='w3 h3 p1 bg shadow-border-2 br11'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}
+
+{variant === 4 && 
+  <div class='w3 h3 p1 br11 shadow-3'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}
+
+{variant === 5 && 
+  <div class='w3 h3 p1 br11 shadow-6'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}
+
+{variant === 6 && 
+  <div class='w3 h3 p1 br11 gradient-1'>
+    <div class='p1 bg-gray-11 br11'>
+      <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'>
+    </div>
+  </div>
+}
+
+{variant === 7 && 
   <div class='w3 h3 p1'>
     <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
   </div>
 }
+
+{variant === 8 && 
+  <div class='w3 h3 p1'>
+    <img height='100%' width='100%'src={image} class='aspect-ratio-1x1 br11'/>
+  </div>
+}
+

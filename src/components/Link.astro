@@ -1,0 +1,10 @@
+---
+const { href, title, variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <a href={href} title={title} class='gray-11'>
+    <slot />
+  </a>
+}
+
