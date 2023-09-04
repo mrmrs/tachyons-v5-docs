@@ -1,12 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Badge from '../../components/Badge.astro';
 import Header from '../../components/Header.astro';
 import Card from '../../components/Card.astro';
 import Link from '../../components/Link.astro';
 import Avatar from '../../components/Avatar.astro';
 import SlabStat from '../../components/SlabStat.astro';
-import Footer from '../../components/Footer.astro';
 import ComponentTitle from '../../components/ComponentTitle.astro';
+import Footer from '../../components/Footer.astro';
 ---
 
 <Layout title="Tachyons - Design at the speed of light">
@@ -28,8 +29,18 @@ import ComponentTitle from '../../components/ComponentTitle.astro';
       <Avatar variant={8} /> 
     </section>
     <section class='p5'>
+      <ComponentTitle>Badge</ComponentTitle> 
+      <Badge>New</Badge>
+      <Badge variant={2}>Badge example</Badge>
+
+    </section>
+    <section class='p5'>
       <ComponentTitle>SlabStat</ComponentTitle> 
-      <SlabStat /> 
+      <div class='flex g5'>
+        <SlabStat /> 
+        <SlabStat variant={2} /> 
+        <SlabStat variant={3} /> 
+      </div>
     </section>
     <section class='p5'>
       <ComponentTitle>Card</ComponentTitle> 

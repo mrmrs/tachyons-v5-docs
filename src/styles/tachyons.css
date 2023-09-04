@@ -37,6 +37,7 @@
 
 /* Modules */
 @import './_box-sizing';
+@import './_container-type';
 @import './_aspect-ratios';
 @import './_images';
 @import './_background-size';
