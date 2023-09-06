@@ -5,6 +5,7 @@ import Header from '../../components/Header.astro';
 import Card from '../../components/Card.astro';
 import Link from '../../components/Link.astro';
 import Avatar from '../../components/Avatar.astro';
+import Alert from '../../components/Alert.astro';
 import SlabStat from '../../components/SlabStat.astro';
 import ComponentTitle from '../../components/ComponentTitle.astro';
 import Footer from '../../components/Footer.astro';
@@ -30,8 +31,25 @@ import Footer from '../../components/Footer.astro';
     </section>
     <section class='p5'>
       <ComponentTitle>Badge</ComponentTitle> 
-      <Badge>New</Badge>
-      <Badge variant={2}>Badge example</Badge>
+      <div class='flex g4'>
+        <Badge>New</Badge>
+        <Badge variant={2}>Beta</Badge>
+        <Badge variant={3}>Alpha</Badge>
+      </div>
+
+    </section>
+    <section class='p5'>
+      <ComponentTitle>Alert</ComponentTitle> 
+      <div>
+        <Alert variant={1}>Variant 1 Alert Style</Alert>
+        <Alert variant={2}>Variant 2 Alert Style</Alert>
+        <Alert variant={3}>Variant 3 Alert Style</Alert>
+        <Alert variant={4}>Variant 4 Alert Style</Alert>
+        <Alert variant={5}>Variant 5 Alert Style</Alert>
+        <Alert variant={6}>Variant 6 Alert Style</Alert>
+        <Alert variant={7}>Variant 7 Alert Style</Alert>
+        <Alert variant={8}>Variant 8 Alert Style</Alert>
+      </div>
 
     </section>
     <section class='p5'>

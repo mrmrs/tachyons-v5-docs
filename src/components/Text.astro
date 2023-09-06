@@ -7,3 +7,15 @@ const { variant = 1 } = Astro.props;
     <slot /> 
   </p>
 }
+
+{variant === 2 && 
+  <p class='lh-body measure-wide'>
+    <slot /> 
+  </p>
+}
+
+{variant === 3 && 
+  <p class='lh-body measure-narrow'>
+    <slot /> 
+  </p>
+}

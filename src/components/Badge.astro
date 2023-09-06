@@ -3,13 +3,19 @@ const { variant = 1 } = Astro.props;
 ---
 
 {variant === 1 && 
-  <span class='br11'>
+  <span class='dib br11 bg-black white f1 px3 py1'>
     <slot />
   </span>
 }
 
 {variant === 2 && 
-  <span class='br11 bg color'>
+  <span class='dib br11 bg-white black shadow-border-2 f1 px3 py1'>
+    <slot />
+  </span>
+}
+
+{variant === 3 && 
+  <span class='dib br11 bg-gray-10 f1 px3 py1'>
     <slot />
   </span>
 }

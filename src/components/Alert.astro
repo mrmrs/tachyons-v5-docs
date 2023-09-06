@@ -1,0 +1,10 @@
+---
+const { variant = 1 } = Astro.props;
+---
+
+{variant === 1 && 
+  <p class='ba p3 bg-white black'>
+    <slot />
+  </p>
+}
+
