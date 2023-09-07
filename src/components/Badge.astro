@@ -1,22 +1,55 @@
 ---
-const { variant = 1 } = Astro.props;
+const { skin = 'bg-black white', variant = 1 } = Astro.props;
 ---
 
 {variant === 1 && 
-  <span class='dib br11 bg-black white f1 px3 py1'>
+  <span class=`dib br11 f1 px3 py2 lh-solid ${skin}`>
     <slot />
   </span>
 }
 
 {variant === 2 && 
-  <span class='dib br11 bg-white black shadow-border-2 f1 px3 py1'>
+  <span class=`dib br11 f1 px3 py2 lh-solid fw9 ${skin}`>
     <slot />
   </span>
 }
 
 {variant === 3 && 
-  <span class='dib br11 bg-gray-10 f1 px3 py1'>
+  <span class=`dib br11 f1 px3 py2 lh-solid fw7 ttu ${skin}`>
     <slot />
   </span>
 }
 
+{variant === 4 && 
+  <span class=`dib br1 f1 px3 py2 lh-solid ${skin}`>
+    <slot />
+  </span>
+}
+
+{variant === 5 && 
+  <span class=`dib br1 f1 px3 py2 lh-solid fw9 ${skin}`>
+    <slot />
+  </span>
+}
+
+{variant === 6 && 
+  <span class=`dib br1 f1 px3 py2 lh-solid fw9 ttu ${skin}`>
+    <slot />
+  </span>
+}
+
+{variant === 7 && 
+  <span class=`dib f1 px3 py2 lh-solid fw4 ${skin}`>
+    <slot />
+  </span>
+}
+{variant === 8 && 
+  <span class=`dib f1 px3 py2 lh-solid fw9 ${skin}`>
+    <slot />
+  </span>
+}
+{variant === 9 && 
+  <span class=`dib f1 px3 py2 lh-solid fw9 ttu ${skin}`>
+    <slot />
+  </span>
+}

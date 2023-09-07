@@ -1,15 +1,88 @@
 ---
-const { variant = 1 } = Astro.props;
+const { author, variant = 1 } = Astro.props;
 ---
 
 {variant === 1 && 
-  <header class='bb flex items-center'>
-    <a href='/' class='link db py3 px4 fw9 f5 gray-0' title='Tachyond Documentation'>Tachyons</a>  
-    <nav class='flex ml-auto mr3'>
-      <a href='/docs' class='link db py2 px3 fw7 f3 gray-0' title='Components'>Docs</a>  
-      <a href='/theme' class='link db py2 px3 fw7 f3 gray-0' title='Components'>Theme</a>  
-      <a href='/components' class='link db py2 px3 fw7 f3 gray-0' title='Components'>Components</a>  
-      <a href='/pages' class='link db py2 px3 fw7 f3 gray-0' title='Pages'>Pages</a>  
-    </nav>
-  </header>
+  <blockquote class='root ml0 measure'>
+    <p class='mt0 lh-body'>
+      <slot />
+    </p>
+    <p class='fw9'>
+      {author}
+    </p>
+  </blockquote>
+}
+
+{variant === 2 && 
+  <blockquote class='root ml0'>
+    <p class='mt0 fw7 lh-body'>
+      <slot />
+    </p>
+    <p>
+      {author}
+    </p>
+  </blockquote>
+}
+
+{variant === 3 && 
+  <blockquote class='root ml0'>
+    <p class='mt0 lh-body f3-s'>
+      <slot />
+    </p>
+    <p class='f1 ttu fw7 tracked-mega'>
+      {author}
+    </p>
+  </blockquote>
+}
+
+{variant === 4 && 
+  <blockquote class='root ml0'>
+    <p class='mt0 lh-title fw9 f5-s'>
+      <slot />
+    </p>
+    <p>
+      {author}
+    </p>
+  </blockquote>
+}
+
+{variant === 5 && 
+  <blockquote class='root ml0'>
+    <p class='mt0 lh-body'>
+      <slot />
+    </p>
+    <p>
+      {author}
+    </p>
+  </blockquote>
+}
+{variant === 6 && 
+  <blockquote class='root ml0 pl4 bw3 bl'>
+    <p class='mt0 lh-body'>
+      <slot />
+    </p>
+    <p class='mb0'>
+      {author}
+    </p>
+  </blockquote>
+}
+{variant === 7 && 
+  <blockquote class='root ml0'>
+    <p class='mt0 lh-body'>
+      <slot />
+    </p>
+    <p>
+      {author}
+    </p>
+  </blockquote>
+}
+{variant === 8 && 
+  <blockquote class='root ml0'>
+    <p class='mt0 lh-body'>
+      <slot />
+    </p>
+    <p>
+      {author}
+    </p>
+  </blockquote>
 }

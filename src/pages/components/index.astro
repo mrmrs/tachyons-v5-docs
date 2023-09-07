@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Badge from '../../components/Badge.astro';
+import Blockquote from '../../components/Blockquote.astro';
 import Header from '../../components/Header.astro';
 import Card from '../../components/Card.astro';
 import Link from '../../components/Link.astro';
@@ -13,7 +14,7 @@ import Footer from '../../components/Footer.astro';
 
 <Layout title="Tachyons - Design at the speed of light">
   <Header />
-  <div>
+  <div class='pb8'>
     <section class='p5'>
       <ComponentTitle>Link</ComponentTitle> 
       <Link href='https://tachyons.io' title='Tachyons'>A sample text link</Link>
@@ -31,10 +32,83 @@ import Footer from '../../components/Footer.astro';
     </section>
     <section class='p5'>
       <ComponentTitle>Badge</ComponentTitle> 
-      <div class='flex g4'>
-        <Badge>New</Badge>
+      <div class='flex g4 mb4'>
+        <Badge variant={1}>New</Badge>
         <Badge variant={2}>Beta</Badge>
         <Badge variant={3}>Alpha</Badge>
+        <Badge variant={4}>Badge</Badge>
+        <Badge variant={5}>Badge</Badge>
+        <Badge variant={6}>Badge</Badge>
+        <Badge variant={7}>Badge</Badge>
+        <Badge variant={8}>Badge</Badge>
+        <Badge variant={9}>Badge</Badge>
+      </div>
+      <div class='flex flex-wrap g4 mb4'>
+        <Badge skin='blue'>Default</Badge>
+        <Badge skin='blue-dark'>Dark</Badge>
+        <Badge skin='blue-light'>Light</Badge>
+        <Badge skin='indigo'>Default</Badge>
+        <Badge skin='indigo-dark'>Dark</Badge>
+        <Badge skin='indigo-light'>Light</Badge>
+        <Badge skin='violet'>Default</Badge>
+        <Badge skin='violet-dark'>Dark</Badge>
+        <Badge skin='violet-light'>Light</Badge>
+        <Badge skin='magenta'>Default</Badge>
+        <Badge skin='magenta-dark'>Dark</Badge>
+        <Badge skin='magenta-light'>Light</Badge>
+        <Badge skin='red'>Default</Badge>
+        <Badge skin='red-dark'>Dark</Badge>
+        <Badge skin='red-light'>Light</Badge>
+        <Badge skin='red-orange'>Default</Badge>
+        <Badge skin='red-orange-dark'>Dark</Badge>
+        <Badge skin='red-orange-light'>Light</Badge>
+        <Badge skin='orange'>Default</Badge>
+        <Badge skin='orange-dark'>Dark</Badge>
+        <Badge skin='orange-light'>Light</Badge>
+        <Badge skin='gold'>Default</Badge>
+        <Badge skin='gold-dark'>Dark</Badge>
+        <Badge skin='gold-light'>Light</Badge>
+        <Badge skin='yellow'>Default</Badge>
+        <Badge skin='yellow-dark'>Dark</Badge>
+        <Badge skin='yellow-light'>Light</Badge>
+        <Badge skin='green'>Default</Badge>
+        <Badge skin='green-dark'>Dark</Badge>
+        <Badge skin='green-light'>Light</Badge>
+        <Badge skin='teal'>Default</Badge>
+        <Badge skin='teal-dark'>Dark</Badge>
+        <Badge skin='teal-light'>Light</Badge>
+        <Badge skin='cyan'>Default</Badge>
+        <Badge skin='cyan-dark'>Dark</Badge>
+        <Badge skin='cyan-light'>Light</Badge>
+      </div>
+    </section>
+    <section class='p5 root'>
+      <ComponentTitle>Blockquote</ComponentTitle> 
+      <div class='grid g4 cols-1 cols-2-s'>
+        <Blockquote author='Milton Glaser' variant={1}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={2}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={3}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={4}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={5}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={6}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={7}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
+        <Blockquote author='Milton Glaser' variant={8}>
+          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
+        </Blockquote>
       </div>
 
     </section>
