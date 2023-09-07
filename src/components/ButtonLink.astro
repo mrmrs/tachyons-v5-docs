@@ -1,8 +1,50 @@
 ---
-const { variant = 1 } = Astro.props;
+const { href = '#0', title = '', variant = 1 } = Astro.props;
 ---
 
 {variant === 1 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 2 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 3 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 4 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 5 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 6 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 7 && 
+  <a href={href} title={title} class='link'>
+    <slot />
+  </a>
+}
+
+{variant === 8 && 
   <a href={href} title={title} class='link'>
     <slot />
   </a>

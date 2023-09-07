@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Badge from '../../components/Badge.astro';
+import ButtonLink from '../../components/ButtonLink.astro';
 import Blockquote from '../../components/Blockquote.astro';
 import Header from '../../components/Header.astro';
 import Card from '../../components/Card.astro';
@@ -15,9 +16,23 @@ import Footer from '../../components/Footer.astro';
 <Layout title="Tachyons - Design at the speed of light">
   <Header />
   <div class='pb8'>
-    <section class='p5'>
+    <section class='dn p5'>
       <ComponentTitle>Link</ComponentTitle> 
       <Link href='https://tachyons.io' title='Tachyons'>A sample text link</Link>
+    </section>
+    <section class='dn p5'>
+      <ComponentTitle>ButtonLink</ComponentTitle> 
+      <div class='flex g4 mb4'>
+        <ButtonLink href='#0' variant={1}>New</ButtonLink>
+        <ButtonLink href='#0' variant={2}>Beta</ButtonLink>
+        <ButtonLink href='#0' variant={3}>Alpha</ButtonLink>
+        <ButtonLink href='#0' variant={4}>ButtonLink</ButtonLink>
+        <ButtonLink href='#0' variant={5}>ButtonLink</ButtonLink>
+        <ButtonLink href='#0' variant={6}>ButtonLink</ButtonLink>
+        <ButtonLink href='#0' variant={7}>ButtonLink</ButtonLink>
+        <ButtonLink href='#0' variant={8}>ButtonLink</ButtonLink>
+        <ButtonLink href='#0' variant={9}>ButtonLink</ButtonLink>
+      </div>
     </section>
     <section class='p5 grid g4 cols-min-64'>
       <ComponentTitle>Avatar</ComponentTitle> 
@@ -97,24 +112,12 @@ import Footer from '../../components/Footer.astro';
         <Blockquote author='Milton Glaser' variant={4}>
           “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
         </Blockquote>
-        <Blockquote author='Milton Glaser' variant={5}>
-          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
-        </Blockquote>
-        <Blockquote author='Milton Glaser' variant={6}>
-          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
-        </Blockquote>
-        <Blockquote author='Milton Glaser' variant={7}>
-          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
-        </Blockquote>
-        <Blockquote author='Milton Glaser' variant={8}>
-          “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for” 
-        </Blockquote>
       </div>
 
     </section>
     <section class='p5'>
       <ComponentTitle>Alert</ComponentTitle> 
-      <div>
+      <div class='grid g4 mb4'>
         <Alert variant={1}>Variant 1 Alert Style</Alert>
         <Alert variant={2}>Variant 2 Alert Style</Alert>
         <Alert variant={3}>Variant 3 Alert Style</Alert>
@@ -123,6 +126,41 @@ import Footer from '../../components/Footer.astro';
         <Alert variant={6}>Variant 6 Alert Style</Alert>
         <Alert variant={7}>Variant 7 Alert Style</Alert>
         <Alert variant={8}>Variant 8 Alert Style</Alert>
+      </div>
+      <div class='root grid g4 cols-3-s'>
+        <Alert skin='blue'>An example of an alert</Alert>
+        <Alert skin='blue-dark'>An example of an alert</Alert>
+        <Alert skin='blue-light'>An example of an alert</Alert>
+        <Alert skin='indigo'>An example of an alert</Alert>
+        <Alert skin='indigo-dark'>An example of an alert</Alert>
+        <Alert skin='indigo-light'>An example of an alert</Alert>
+        <Alert skin='magenta'>An example of an alert</Alert>
+        <Alert skin='magenta-dark'>An example of an alert</Alert>
+        <Alert skin='magenta-light'>An example of an alert</Alert>
+        <Alert skin='red'>An example of an alert</Alert>
+        <Alert skin='red-dark'>An example of an alert</Alert>
+        <Alert skin='red-light'>An example of an alert</Alert>
+        <Alert skin='red-orange'>An example of an alert</Alert>
+        <Alert skin='red-orange-dark'>An example of an alert</Alert>
+        <Alert skin='red-orange-light'>An example of an alert</Alert>
+        <Alert skin='orange'>An example of an alert</Alert>
+        <Alert skin='orange-dark'>An example of an alert</Alert>
+        <Alert skin='orange-light'>An example of an alert</Alert>
+        <Alert skin='gold'>An example of an alert</Alert>
+        <Alert skin='gold-dark'>An example of an alert</Alert>
+        <Alert skin='gold-light'>An example of an alert</Alert>
+        <Alert skin='yellow'>An example of an alert</Alert>
+        <Alert skin='yellow-dark'>An example of an alert</Alert>
+        <Alert skin='yellow-light'>An example of an alert</Alert>
+        <Alert skin='green'>An example of an alert</Alert>
+        <Alert skin='green-dark'>An example of an alert</Alert>
+        <Alert skin='green-light'>An example of an alert</Alert>
+        <Alert skin='teal'>An example of an alert</Alert>
+        <Alert skin='teal-dark'>An example of an alert</Alert>
+        <Alert skin='teal-light'>An example of an alert</Alert>
+        <Alert skin='cyan'>An example of an alert</Alert>
+        <Alert skin='cyan-dark'>An example of an alert</Alert>
+        <Alert skin='cyan-light'>An example of an alert</Alert>
       </div>
 
     </section>
