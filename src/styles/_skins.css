@@ -417,13 +417,13 @@
 }
 
 .blue-dark {
-  background-color: var(--blue-1);
+  background-color: var(--blue-3);
   color: var(--blue-9);
 }
 
 .blue-light {
   color: var(--blue-3);
-  background-color: var(--blue-11);
+  background-color: var(--blue-10);
 }
 
 .indigo {

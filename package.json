@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.10.0"
+    "astro": "^3.0.9"
   },
   "devDependencies": {
     "authors-to-markdown": "^0.1.0",

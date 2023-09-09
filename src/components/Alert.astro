@@ -1,51 +1,51 @@
 ---
-const { skin =`bg-white black`, variant = 1 } = Astro.props;
+const { class: className =`bg-white black`, variant = 1 } = Astro.props;
 ---
 
 {variant === 1 && 
-  <p class=`my0 ba p4 f2 ${skin}`>
+  <p class=`my0 shadow-border-2 p4 f2 ${className}`>
     <slot />
   </p>
 }
 
 {variant === 2 && 
-  <p class=`my0 ba p4 f2 tc ${skin}`>
+  <p class=`my0 shadow-border-2 p4 f2 tc ${className}`>
     <slot />
   </p>
 }
 
 {variant === 3 && 
-  <p class=`my0 ba p4 f2 fw7 ${skin}`>
+  <p class=`my0 shadow-border-2 p4 f2 fw7 ${className}`>
     <slot />
   </p>
 }
 
 {variant === 4 && 
-  <p class=`my0 ba p4 f2 fw7 tc ${skin}`>
+  <p class=`my0 shadow-border-2 p4 f2 fw7 tc ${className}`>
     <slot />
   </p>
 }
 
 {variant === 5 &&
-  <p class=`my0 ba br2 p4 f2 shadow-border-1 ${skin}`>
+  <p class=`my0 br2 shadow-border-2 p4 f2 shadow-border-1 ${className}`>
     <slot />
   </p>
 }
 
 {variant === 6 && 
-  <p class=`my0 ba br2 p4 f2 fw7 ${skin}`>
+  <p class=`my0 br2 shadow-border-2 p4 f2 fw7 ${className}`>
     <slot />
   </p>
 }
 
 {variant === 7 && 
-  <p class=`my0 ba br2 p4 f2 tc ${skin}`>
+  <p class=`my0 br2 shadow-border-2 p4 f2 tc ${className}`>
     <slot />
   </p>
 }
 
 {variant === 8 && 
-  <p class=`my0 ba br2 p4 f2 fw7 tc ${skin}`>
+  <p class=`my0 br2 shadow-border-2 p4 f2 fw7 tc ${className}`>
     <slot />
   </p>
 }
